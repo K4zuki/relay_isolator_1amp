@@ -562,7 +562,7 @@ design rules under a new name.</description>
 <attribute name="DIGIKEY" value="Z116-ND" x="15.6" y="22" size="1.778" layer="27" display="off"/>
 <attribute name="MOUSER" value="653-G6K-2P-DC5" x="15.6" y="22" size="1.778" layer="27" display="off"/>
 </element>
-<element name="GIT1" library="git-revision" package="GIT-REVISION_1.7" value="b4936b8" x="13.3" y="1.7">
+<element name="GIT1" library="git-revision" package="GIT-REVISION_1.7" value="eb39e18" x="13.3" y="1.7">
 <attribute name="NOT_COMPONENT" value="YES" x="13.3" y="1.7" size="2" layer="27" ratio="20" display="off"/>
 </element>
 </elements>

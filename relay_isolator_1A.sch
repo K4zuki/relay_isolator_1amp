@@ -1135,7 +1135,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="RL1" library="mylib" deviceset="RELAY-2C-*" device="-1A" technology="DC5"/>
 <part name="SUPPLY1" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="mylib" deviceset="GND" device=""/>
-<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="_1.7" value="b4936b8"/>
+<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="_1.7" value="eb39e18"/>
 </parts>
 <sheets>
 <sheet>
