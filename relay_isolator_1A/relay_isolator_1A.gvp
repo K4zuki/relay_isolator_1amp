@@ -7,5 +7,5 @@
 (define-layer! 2 (cons 'filename "relay_isolator_1A.GTO")(cons 'visible #t)(cons 'color #(53713 6939 26728)))
 (define-layer! 1 (cons 'filename "relay_isolator_1A.GTL")(cons 'visible #t)(cons 'color #(47802 47802 47802)))
 (define-layer! 0 (cons 'filename "relay_isolator_1A.TXT")(cons 'visible #t)(cons 'color #(65535 32639 29555))(cons 'attribs (list (list 'autodetect 'Boolean 0) (list 'zero_supression 'Enum 0) (list 'units 'Enum 0) (list 'digits 'Integer 5))))
-(define-layer! -1 (cons 'filename "/home/yamamoto/workspace/relay_isolator/1amps/relay_isolator_1A")(cons 'visible #f)(cons 'color #(0 0 0)))
+(define-layer! -1 (cons 'filename "/home/yamamoto/workspace/relay_isolator_1amp/relay_isolator_1A")(cons 'visible #f)(cons 'color #(0 0 0)))
 (set-render-type! 2)
