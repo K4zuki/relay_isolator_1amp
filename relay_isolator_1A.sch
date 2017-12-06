@@ -368,27 +368,8 @@
 <vertex x="0.1" y="4"/>
 <vertex x="-0.1" y="4"/>
 </polygon>
-</package>
-<package name="JW2SN">
-<pad name="5" x="26.3" y="3.75" drill="1.5" rot="R180"/>
-<pad name="6" x="21.3" y="3.75" drill="1.5" rot="R180"/>
-<pad name="7" x="16.3" y="3.75" drill="1.5" rot="R180"/>
-<pad name="8" x="1.3" y="3.75" drill="1.5" rot="R180"/>
-<pad name="1" x="1.3" y="-3.75" drill="1.5" rot="R180"/>
-<pad name="2" x="16.3" y="-3.75" drill="1.5" rot="R180"/>
-<pad name="3" x="21.3" y="-3.75" drill="1.5" rot="R180"/>
-<pad name="4" x="26.3" y="-3.75" drill="1.5" rot="R180"/>
-<wire x1="0" y1="6.4" x2="28.6" y2="6.4" width="0.3" layer="21"/>
-<wire x1="28.6" y1="6.4" x2="28.6" y2="-6.4" width="0.3" layer="21"/>
-<wire x1="28.6" y1="-6.4" x2="0" y2="-6.4" width="0.3" layer="21"/>
-<wire x1="0" y1="-6.4" x2="0" y2="-4.8" width="0.3" layer="21"/>
-<wire x1="0" y1="-4.8" x2="0" y2="-2.7" width="0.3" layer="51"/>
-<wire x1="0" y1="-2.7" x2="0" y2="2.7" width="0.3" layer="21"/>
-<wire x1="0" y1="2.7" x2="0" y2="4.8" width="0.3" layer="51"/>
-<wire x1="0" y1="4.8" x2="0" y2="6.4" width="0.3" layer="21"/>
-<text x="4.8" y="-1.1" size="2" layer="48" ratio="15">h=20mm</text>
-<text x="0" y="6.8" size="2" layer="25" ratio="15">&gt;NAME</text>
-<text x="0" y="-8.8" size="2" layer="27" ratio="15">&gt;VALUE</text>
+<text x="1.8" y="2.1" size="1.016" layer="51" ratio="20">NC</text>
+<text x="1.8" y="-3.1" size="1.016" layer="51" ratio="20">NC</text>
 </package>
 <package name="SOD-523">
 <smd name="A" x="-1" y="0" dx="0.8" dy="0.6" layer="1" cream="no"/>
@@ -506,6 +487,46 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 <vertex x="-2.54" y="-0.9525"/>
 </polygon>
 </package>
+<package name="G6K-2P-Y">
+<pad name="8" x="0" y="-2.54" drill="0.85"/>
+<pad name="7" x="3.2" y="-2.54" drill="0.85"/>
+<pad name="6" x="5.4" y="-2.54" drill="0.85"/>
+<pad name="5" x="7.6" y="-2.54" drill="0.85"/>
+<pad name="4" x="7.6" y="2.54" drill="0.85"/>
+<pad name="3" x="5.4" y="2.54" drill="0.85"/>
+<pad name="2" x="3.2" y="2.54" drill="0.85"/>
+<pad name="1" x="0" y="2.54" drill="0.85"/>
+<wire x1="8.8" y1="3.3" x2="8.8" y2="-3.3" width="0.3" layer="21"/>
+<wire x1="8.8" y1="-3.3" x2="8.4" y2="-3.3" width="0.3" layer="21"/>
+<wire x1="7" y1="-3.3" x2="6.1" y2="-3.3" width="0.3" layer="21"/>
+<wire x1="4.7" y1="-3.3" x2="3.9" y2="-3.3" width="0.3" layer="21"/>
+<wire x1="2.5" y1="-3.3" x2="0.7" y2="-3.3" width="0.3" layer="21"/>
+<wire x1="-0.7" y1="-3.3" x2="-1.2" y2="-3.3" width="0.3" layer="21"/>
+<wire x1="-1.2" y1="-3.3" x2="-1.2" y2="3.3" width="0.3" layer="21"/>
+<wire x1="-0.7" y1="-3.3" x2="0.7" y2="-3.3" width="0.3" layer="51"/>
+<wire x1="2.5" y1="-3.3" x2="3.9" y2="-3.3" width="0.3" layer="51"/>
+<wire x1="4.7" y1="-3.3" x2="6.1" y2="-3.3" width="0.3" layer="51"/>
+<wire x1="7" y1="-3.3" x2="8.4" y2="-3.3" width="0.3" layer="51"/>
+<wire x1="8.8" y1="3.3" x2="8.4" y2="3.3" width="0.3" layer="21"/>
+<wire x1="7" y1="3.3" x2="6.1" y2="3.3" width="0.3" layer="21"/>
+<wire x1="4.7" y1="3.3" x2="3.8" y2="3.3" width="0.3" layer="21"/>
+<wire x1="2.4" y1="3.3" x2="0.7" y2="3.3" width="0.3" layer="21"/>
+<wire x1="-0.7" y1="3.3" x2="-1.2" y2="3.3" width="0.3" layer="21"/>
+<wire x1="-0.7" y1="3.3" x2="0.7" y2="3.3" width="0.3" layer="51"/>
+<wire x1="2.4" y1="3.3" x2="3.8" y2="3.3" width="0.3" layer="51"/>
+<wire x1="4.7" y1="3.3" x2="6.1" y2="3.3" width="0.3" layer="51"/>
+<wire x1="7" y1="3.3" x2="8.4" y2="3.3" width="0.3" layer="51"/>
+<text x="-1.1" y="-4.9" size="1.27" layer="25" ratio="17">&gt;NAME</text>
+<circle x="0" y="4.1" radius="0.2" width="0.3" layer="21"/>
+<polygon width="0.3" layer="21">
+<vertex x="-0.1" y="4.2"/>
+<vertex x="0.1" y="4.2"/>
+<vertex x="0.1" y="4"/>
+<vertex x="-0.1" y="4"/>
+</polygon>
+<text x="2.3" y="2.1" size="1.016" layer="51" ratio="20">NC</text>
+<text x="2.4" y="-3.1" size="1.016" layer="51" ratio="20">NC</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TESTPIN-1">
@@ -578,7 +599,7 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="PART-RELAY-COIL">
+<symbol name="RELAY-COIL-POL">
 <wire x1="-3.81" y1="-1.905" x2="-1.905" y2="-1.905" width="0.254" layer="94"/>
 <wire x1="3.81" y1="-1.905" x2="3.81" y2="1.905" width="0.254" layer="94"/>
 <wire x1="3.81" y1="1.905" x2="1.905" y2="1.905" width="0.254" layer="94"/>
@@ -594,6 +615,9 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 <text x="1.27" y="5.08" size="1.778" layer="95">&gt;PART</text>
 <pin name="2" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<wire x1="0.635" y1="3.175" x2="1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.27" y1="3.81" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-3.175" x2="1.905" y2="-3.175" width="0.254" layer="94"/>
 </symbol>
 <symbol name="PART-RELAY-SW">
 <wire x1="3.175" y1="5.08" x2="1.905" y2="5.08" width="0.254" layer="94"/>
@@ -945,14 +969,14 @@ high speed (Philips)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RELAY-2C-*" prefix="RL" uservalue="yes">
+<deviceset name="RELAY-2C-POL-*" prefix="RL" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="PART-RELAY-COIL" x="0" y="0"/>
-<gate name="G$2" symbol="PART-RELAY-SW" x="17.78" y="0" swaplevel="1"/>
-<gate name="G$3" symbol="PART-RELAY-SW" x="35.56" y="0" swaplevel="1"/>
+<gate name="G$1" symbol="RELAY-COIL-POL" x="0" y="0"/>
+<gate name="G$2" symbol="PART-RELAY-SW" x="17.78" y="-2.54" swaplevel="1"/>
+<gate name="G$3" symbol="PART-RELAY-SW" x="35.56" y="-2.54" swaplevel="1"/>
 </gates>
 <devices>
-<device name="-5A" package="JW2SN">
+<device name="-G6K-2P" package="G6K-2P">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="8"/>
@@ -964,17 +988,13 @@ high speed (Philips)</description>
 <connect gate="G$3" pin="NO" pad="5"/>
 </connects>
 <technologies>
-<technology name="942H-2C-5DS">
-<attribute name="AKIZUKI" value="P-1214" constant="no"/>
-<attribute name="DIGIKEY" value="" constant="no"/>
-</technology>
-<technology name="JW2SN-5V">
-<attribute name="AKIZUKI" value="" constant="no"/>
-<attribute name="DIGIKEY" value="255-1116-ND" constant="no"/>
+<technology name="5V">
+<attribute name="DIGIKEY" value="Z116-ND" constant="no"/>
+<attribute name="MOUSER" value="653-G6K-2P-DC5" constant="no"/>
 </technology>
 </technologies>
 </device>
-<device name="-1A" package="G6K-2P">
+<device name="-G6K-2P-Y" package="G6K-2P-Y">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="8"/>
@@ -986,9 +1006,9 @@ high speed (Philips)</description>
 <connect gate="G$3" pin="NO" pad="5"/>
 </connects>
 <technologies>
-<technology name="DC5">
-<attribute name="DIGIKEY" value="Z116-ND" constant="no"/>
-<attribute name="MOUSER" value="653-G6K-2P-DC5" constant="no"/>
+<technology name="5V">
+<attribute name="DIGIKEY" value="Z132-ND" constant="no"/>
+<attribute name="MOUSER" value="653-G6K-2P-Y-DC5" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1132,7 +1152,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="CON5" library="mylib" deviceset="ETB43034*" device="" technology="B"/>
 <part name="R1" library="mylib" deviceset="R-US-*" device="-1608" technology="10K"/>
 <part name="D1" library="mylib" deviceset="DIODE2-*" device="-SOD123" technology="100V0.3A"/>
-<part name="RL1" library="mylib" deviceset="RELAY-2C-*" device="-1A" technology="DC5"/>
+<part name="RL1" library="mylib" deviceset="RELAY-2C-POL-*" device="-G6K-2P" technology="5V"/>
 <part name="SUPPLY1" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="mylib" deviceset="GND" device=""/>
 <part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="_1.7" value="eb39e18"/>
