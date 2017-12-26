@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: k4zuki/pandocker
         environment:
-          CURRENT_TAG: echo $CIRCLE_SHA1|cut -c1-7
+          CURRENT_TAG: $(echo $CIRCLE_SHA1|cut -c -7)
     steps:
       - checkout
       - run:
