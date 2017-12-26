@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: k4zuki/pandocker
         environment:
-          SHORT_HASH: $(echo $CIRCLE_SHA1|cut -c1-7)
+          SHORT_HASH: echo $CIRCLE_SHA1|cut -c1-7
     steps:
       - checkout
       - run:
