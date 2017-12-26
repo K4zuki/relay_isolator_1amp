@@ -14,7 +14,6 @@ jobs:
           name: Update tags in sch/brd files
           # TODO: replace "tag-updater" by proper name
           command: |
-            mkdir -p deploy
             git clone https://github.com/K4zuki/myPCBlib.git tag-updater
             # for fname in `ls *.sch *.brd`; do python3 tag-updater/eagle-commit-update.py --tag $CURRENT_TAG $fname ; done
             for fname in `ls *.sch *.brd`; do echo $CURRENT_TAG $fname ; done
@@ -22,7 +21,7 @@ jobs:
       - run:
           name: Deploy preparation
           command: |
-            mkdir deploy; cd deploy
+            mkdir -p deploy; cd deploy
             zip $CIRCLE_PROJECT_REPONAME-$CURRENT_TAG ../*-$CURRENT_TAG.brd ../*-$CURRENT_TAG.sch
             cd ..
 
