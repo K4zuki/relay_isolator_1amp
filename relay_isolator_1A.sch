@@ -1642,7 +1642,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="RL1" library="mylib" deviceset="RELAY-2C-POL-*" device="-G6K-2P" technology="5V"/>
 <part name="SUPPLY1" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="mylib" deviceset="GND" device=""/>
-<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="_1.7" value="5e08816"/>
+<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="_1.7" value="fc87989"/>
 <part name="PCB1" library="mylib" deviceset="HAMMOND-PCB-*" device="-1551R" technology="BK"/>
 <part name="REF1" library="mylib" deviceset="POMONA72918" device=""/>
 <part name="REF2" library="mylib" deviceset="POMONA72918" device=""/>
