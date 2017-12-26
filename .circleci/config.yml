@@ -9,23 +9,22 @@ jobs:
           name: get submodule
           command: |
             git submodule update --init
-            export CURRENT_TAG=`git rev-parse --short HEAD`
       - run:
           name: Update tags in sch/brd files
           # TODO: replace "tag-updater" by proper name
           command: |
             git clone https://github.com/K4zuki/myPCBlib.git tag-updater
-            for fname in `ls *.sch *.brd`; do python3 tag-updater/eagle-commit-update.py $fname --tag $CURRENT_TAG ; done
-            for fname in `ls *.sch *.brd`; do echo $CURRENT_TAG $fname ; done
+            for fname in `ls *.sch *.brd`; do echo $CIRCLE_SHA1 $fname ; done
+            for fname in `ls *.sch *.brd`; do python3 tag-updater/eagle-commit-update.py $fname --tag $CIRCLE_SHA1 ; done
 
       - run:
           name: Deploy preparation
           command: |
             apt install zip
             mkdir -p deploy; cd deploy
-            zip $CIRCLE_PROJECT_REPONAME-$CURRENT_TAG ../*-$CURRENT_TAG.brd ../*-$CURRENT_TAG.sch
+            zip $CIRCLE_PROJECT_REPONAME-$CURRENT_TAG ../*-$CIRCLE_SHA1.brd ../*-$CIRCLE_SHA1.sch
             cd ..
 
       - run:
           name: Deploy
-          command: ghr -replace -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME build-$CURRENT_TAG deploy/
+          command: ghr -replace -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME build-$CIRCLE_SHA1 deploy/
