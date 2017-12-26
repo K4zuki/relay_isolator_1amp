@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: echo $SHORT_HASH; ls $SHORT_HASH
+          command: echo $SHORT_HASH
       - run:
           name: get submodule
           command: |
