@@ -21,6 +21,7 @@ jobs:
       - run:
           name: Deploy preparation
           command: |
+            apt install zip
             mkdir -p deploy; cd deploy
             zip $CIRCLE_PROJECT_REPONAME-$CURRENT_TAG ../*-$CURRENT_TAG.brd ../*-$CURRENT_TAG.sch
             cd ..
