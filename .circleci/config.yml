@@ -3,32 +3,32 @@ jobs:
   build:
     docker:
       - image: k4zuki/pandocker
-        environment:
-          SHORT_HASH: $(echo $CIRCLE_SHA1|cut -c1-7)
     steps:
       - checkout
       - run:
-          command: echo $SHORT_HASH
-      - run:
-          name: get submodule
           command: |
-            git submodule update --init
-      - run:
-          name: Update tags in sch/brd files
-          command: |
-            git clone https://github.com/K4zuki/myPCBlib.git tag-updater
-            for fname in `ls *.sch *.brd`; do echo $SHORT_HASH $fname ; done
-            for fname in `ls *.sch *.brd`; do python3 tag-updater/eagle-commit-update.py $fname --tag $SHORT_HASH ; done
-
-      - run:
-          name: Deploy preparation
-          command: |
-            apt install zip
-            mkdir -p deploy; cd deploy
-            zip $CIRCLE_PROJECT_REPONAME-$SHORT_HASH ../*-$SHORT_HASH.brd ../*-$SHORT_HASH.sch
-            cd ..
-
-      - run:
-          name: Deploy
-          command: |
-            ghr -replace -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME build-$SHORT_HASH deploy/
+            echo $SHORT_HASH
+            echo $CIRCLE_SHA1|cut -c1-7
+      # - run:
+      #     name: get submodule
+      #     command: |
+      #       git submodule update --init
+      # - run:
+      #     name: Update tags in sch/brd files
+      #     command: |
+      #       git clone https://github.com/K4zuki/myPCBlib.git tag-updater
+      #       for fname in `ls *.sch *.brd`; do echo $SHORT_HASH $fname ; done
+      #       for fname in `ls *.sch *.brd`; do python3 tag-updater/eagle-commit-update.py $fname --tag $SHORT_HASH ; done
+      #
+      # - run:
+      #     name: Deploy preparation
+      #     command: |
+      #       apt install zip
+      #       mkdir -p deploy; cd deploy
+      #       zip $CIRCLE_PROJECT_REPONAME-$SHORT_HASH ../*-$SHORT_HASH.brd ../*-$SHORT_HASH.sch
+      #       cd ..
+      #
+      # - run:
+      #     name: Deploy
+      #     command: |
+      #       ghr -replace -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME build-$SHORT_HASH deploy/
