@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Update tags in sch/brd files
           command: |
-            CIRCLE_SHA1=echo "$CIRCLE_SHA1"|cut -c1-7
+            export CIRCLE_SHA1=echo "$CIRCLE_SHA1"|cut -c1-7
             git clone https://github.com/K4zuki/myPCBlib.git tag-updater
             for fname in `ls *.sch *.brd`; do echo $CIRCLE_SHA1 $fname ; done
             for fname in `ls *.sch *.brd`; do python3 tag-updater/eagle-commit-update.py $fname --tag $CIRCLE_SHA1 ; done
@@ -20,7 +20,7 @@ jobs:
       - run:
           name: Deploy preparation
           command: |
-            CIRCLE_SHA1=echo "$CIRCLE_SHA1"|cut -c1-7
+            export CIRCLE_SHA1=echo "$CIRCLE_SHA1"|cut -c1-7
             apt install zip
             mkdir -p deploy; cd deploy
             zip $CIRCLE_PROJECT_REPONAME-$CIRCLE_SHA1 ../*-$CIRCLE_SHA1.brd ../*-$CIRCLE_SHA1.sch
@@ -29,5 +29,5 @@ jobs:
       - run:
           name: Deploy
           command: |
-            CIRCLE_SHA1=echo "$CIRCLE_SHA1"|cut -c1-7
+            export CIRCLE_SHA1=echo "$CIRCLE_SHA1"|cut -c1-7
             ghr -replace -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME build-$CIRCLE_SHA1 deploy/
