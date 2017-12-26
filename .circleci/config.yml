@@ -3,8 +3,6 @@ jobs:
   build:
     docker:
       - image: k4zuki/pandocker
-        environment:
-          CURRENT_TAG: `echo $CIRCLE_SHA1|cut -c1-7`
     steps:
       - checkout
       - run:
@@ -12,6 +10,8 @@ jobs:
           command: |
             git submodule update --init
       - run:
+          environment:
+            CURRENT_TAG: echo $CIRCLE_SHA1|cut -c1-7
           name: Update tags in sch/brd files
           command: |
             # export CURRENT_TAG=`echo "$CIRCLE_SHA1"|cut -c1-7`
