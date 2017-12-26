@@ -5,10 +5,6 @@ jobs:
       - image: k4zuki/pandocker
     steps:
       - checkout
-      # - run:
-      #     command: |
-      #       echo $SHORT_HASH
-      #       echo $CIRCLE_SHA1|cut -c1-7
       - run:
           name: get submodule
           command: |
@@ -21,19 +17,21 @@ jobs:
           name: Update tags in sch/brd files
           command: |
             export SHORT_HASH=`echo $CIRCLE_SHA1|cut -c1-7`
-            python3 tag-updater/eagle-commit-update.py relay_isolator_1A.brd --tag $SHORT_HASH
-            # for fname in `ls *.sch *.brd`; do echo $SHORT_HASH $fname ; done
+            # python3 tag-updater/eagle-commit-update.py relay_isolator_1A.brd --tag $SHORT_HASH
+            for fname in `ls *.sch *.brd`; do echo $SHORT_HASH $fname ; done
             # for fname in `ls *.sch *.brd`; do python3 tag-updater/eagle-commit-update.py $fname --tag $SHORT_HASH ; done
-      #
-      # - run:
-      #     name: Deploy preparation
-      #     command: |
-      #       apt install zip
-      #       mkdir -p deploy; cd deploy
-      #       zip $CIRCLE_PROJECT_REPONAME-$SHORT_HASH ../*-$SHORT_HASH.brd ../*-$SHORT_HASH.sch
-      #       cd ..
-      #
-      # - run:
-      #     name: Deploy
-      #     command: |
-      #       ghr -replace -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME build-$SHORT_HASH deploy/
+
+      - run:
+          name: Deploy preparation
+          command: |
+            export SHORT_HASH=`echo $CIRCLE_SHA1|cut -c1-7`
+            apt install zip
+            mkdir -p deploy; cd deploy
+            zip $CIRCLE_PROJECT_REPONAME-$SHORT_HASH ../*-$SHORT_HASH.brd ../*-$SHORT_HASH.sch
+            cd ..
+
+      - run:
+          name: Deploy
+          command: |
+            export SHORT_HASH=`echo $CIRCLE_SHA1|cut -c1-7`
+            ghr -replace -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME build-$SHORT_HASH deploy/
