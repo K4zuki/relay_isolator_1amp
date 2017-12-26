@@ -16,7 +16,7 @@ jobs:
           command: |
             mkdir -p deploy
             git clone https://github.com/K4zuki/myPCBlib.git tag-updater
-            for fname in `ls *.sch *.brd`; do python3 tag-updater/eagle-commit-update.py $fname --tag $CURRENT_TAG ; done
+            for fname in `ls *.sch *.brd`; do python3 tag-updater/eagle-commit-update.py --tag $CURRENT_TAG $fname ; done
 
       - run:
           name: Deploy preparation
