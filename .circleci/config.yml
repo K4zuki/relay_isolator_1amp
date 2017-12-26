@@ -16,14 +16,14 @@ jobs:
           command: |
             mkdir -p deploy
             git clone https://github.com/K4zuki/myPCBlib.git tag-updater
-            for fname in `ls *.sch *.brd`; do python3 tag-update/eagle-commit-update.py $(fname) --tag $(CURRENT_TAG) ; done
+            for fname in `ls *.sch *.brd`; do python3 tag-update/eagle-commit-update.py $fname --tag $CURRENT_TAG ; done
 
       - run:
           name: Deploy preparation
           command: |
             mkdir deploy
-            zip deploy/$CIRCLE_PROJECT_REPONAME-$(CURRENT_TAG) *-$(CURRENT_TAG).brd *-$(CURRENT_TAG).sch
+            zip deploy/$CIRCLE_PROJECT_REPONAME-$CURRENT_TAG *-$CURRENT_TAG.brd *-$CURRENT_TAG.sch
 
       - run:
           name: Deploy
-          command: ghr -replace -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME build-$(CURRENT_TAG) deploy/
+          command: ghr -replace -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME build-$CURRENT_TAG deploy/
