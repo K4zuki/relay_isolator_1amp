@@ -527,7 +527,7 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 <text x="2.3" y="2.1" size="1.016" layer="51" ratio="20">NC</text>
 <text x="2.4" y="-3.1" size="1.016" layer="51" ratio="20">NC</text>
 </package>
-<package name="HAMMOND1551R">
+<package name="HAMMOND-1551R">
 <wire x1="44" y1="0" x2="6.25" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="6.25" x2="0" y2="44" width="0" layer="20"/>
 <wire x1="3.25" y1="6.25" x2="6.25" y2="3.25" width="0" layer="20" curve="-90"/>
@@ -790,6 +790,135 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 <wire x1="2.02421875" y1="-7.165109375" x2="4.044953125" y2="-7.165084375" width="0.1" layer="51" curve="68.768597"/>
 <wire x1="0.003490625" y1="-7.4777" x2="2.02421875" y2="-7.165109375" width="0.1" layer="51" curve="17.585958"/>
 <dimension x1="-1.99651875" y1="-12.4777" x2="2.003490625" y2="-12.4777" x3="0.003484375" y3="-15.9" textsize="1.778" textratio="20" layer="51" width="0.1"/>
+</package>
+<package name="HAMMOND-1593L">
+<dimension x1="82.6" y1="56.6" x2="0" y2="56.6" x3="41.3" y3="65.8" textsize="2" layer="47" precision="6"/>
+<dimension x1="82.6" y1="0" x2="82.6" y2="56.6" x3="92.8" y3="28.3" textsize="2" layer="47" precision="6"/>
+<hole x="14.3" y="42.3" drill="3.2"/>
+<circle x="14.3" y="42.3" radius="3.5" width="0" layer="42"/>
+<wire x1="17.6" y1="53.3" x2="24.2" y2="53.3" width="0" layer="20" curve="180"/>
+<circle x="20.9" y="53.3" radius="3.3" width="0" layer="42"/>
+<circle x="20.9" y="53.3" radius="3.3" width="0" layer="41"/>
+<rectangle x1="17.6" y1="53.3" x2="24.2" y2="56.6" layer="41"/>
+<rectangle x1="17.6" y1="53.3" x2="24.2" y2="56.6" layer="42"/>
+<hole x="68.3" y="42.3" drill="3.2"/>
+<circle x="68.3" y="42.3" radius="3.5" width="0" layer="41"/>
+<wire x1="65" y1="53.3" x2="58.4" y2="53.3" width="0" layer="20" curve="-180"/>
+<circle x="61.7" y="53.3" radius="3.3" width="0" layer="41"/>
+<circle x="61.7" y="53.3" radius="3.3" width="0" layer="42"/>
+<rectangle x1="58.4" y1="53.3" x2="65" y2="56.6" layer="42" rot="R180"/>
+<rectangle x1="58.4" y1="53.3" x2="65" y2="56.6" layer="41" rot="R180"/>
+<wire x1="65" y1="53.3" x2="65" y2="56.6" width="0" layer="20"/>
+<wire x1="58.4" y1="53.3" x2="58.4" y2="56.6" width="0" layer="20"/>
+<wire x1="65" y1="56.6" x2="82.6" y2="56.6" width="0" layer="20"/>
+<hole x="14.3" y="14.3" drill="3.2"/>
+<circle x="14.3" y="14.3" radius="3.5" width="0" layer="41"/>
+<wire x1="17.6" y1="53.3" x2="24.2" y2="53.3" width="0" layer="20" curve="180"/>
+<circle x="20.9" y="3.3" radius="3.3" width="0" layer="41"/>
+<circle x="20.9" y="3.3" radius="3.3" width="0" layer="42"/>
+<rectangle x1="17.6" y1="0" x2="24.2" y2="3.3" layer="42"/>
+<rectangle x1="17.6" y1="0" x2="24.2" y2="3.3" layer="41"/>
+<wire x1="17.6" y1="53.3" x2="17.6" y2="56.6" width="0" layer="20"/>
+<wire x1="24.2" y1="53.3" x2="24.2" y2="56.6" width="0" layer="20"/>
+<wire x1="17.6" y1="56.6" x2="0" y2="56.6" width="0" layer="20"/>
+<hole x="68.3" y="14.3" drill="3.2"/>
+<circle x="68.3" y="14.3" radius="3.5" width="0" layer="42"/>
+<wire x1="65" y1="3.3" x2="58.4" y2="3.3" width="0" layer="20" curve="180"/>
+<circle x="61.7" y="3.3" radius="3.3" width="0" layer="42"/>
+<circle x="61.7" y="3.3" radius="3.3" width="0" layer="41"/>
+<rectangle x1="58.4" y1="0" x2="65" y2="3.3" layer="41" rot="R180"/>
+<rectangle x1="58.4" y1="0" x2="65" y2="3.3" layer="42" rot="R180"/>
+<wire x1="65" y1="3.3" x2="58.4" y2="3.3" width="0" layer="20" curve="180"/>
+<wire x1="65" y1="3.3" x2="65" y2="0" width="0" layer="20"/>
+<wire x1="58.4" y1="3.3" x2="58.4" y2="0" width="0" layer="20"/>
+<wire x1="65" y1="0" x2="82.6" y2="0" width="0" layer="20"/>
+<circle x="68.3" y="42.3" radius="3.5" width="0" layer="42"/>
+<circle x="14.3" y="14.3" radius="3.5" width="0" layer="42"/>
+<circle x="14.3" y="42.3" radius="3.5" width="0" layer="41"/>
+<circle x="68.3" y="14.3" radius="3.5" width="0" layer="41"/>
+<wire x1="58.4" y1="0" x2="24.2" y2="0" width="0" layer="20"/>
+<wire x1="24.2" y1="0" x2="24.2" y2="3.3" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="17.6" y2="0" width="0" layer="20"/>
+<wire x1="17.6" y1="0" x2="17.6" y2="3.3" width="0" layer="20"/>
+<wire x1="0" y1="56.6" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="24.2" y1="56.6" x2="58.4" y2="56.6" width="0" layer="20"/>
+<wire x1="82.6" y1="0" x2="82.6" y2="56.6" width="0" layer="20"/>
+<wire x1="17.6" y1="3.3" x2="24.2" y2="3.3" width="0" layer="20" curve="-180"/>
+<dimension x1="20.9" y1="53.3" x2="0" y2="53.3" x3="10.45" y3="61.2" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="61.7" y1="53.3" x2="82.6" y2="53.3" x3="72.15" y3="61.2" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="20.9" y1="53.3" x2="61.7" y2="53.3" x3="41.3" y3="61.2" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="14.3" y1="14.3" x2="0" y2="14.3" x3="7.15" y3="20.1" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="14.3" y1="14.3" x2="68.3" y2="14.3" x3="41.3" y3="20.1" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="68.3" y1="14.3" x2="82.6" y2="14.3" x3="75.45" y3="20.1" textsize="2" layer="47" precision="6"/>
+<dimension x1="14.3" y1="14.3" x2="14.3" y2="0" x3="-4.3" y3="7.15" textsize="2" layer="47" dtype="vertical" precision="6"/>
+<dimension x1="14.3" y1="14.3" x2="14.3" y2="42.3" x3="-4.3" y3="28.3" textsize="2" layer="47" dtype="vertical" precision="6"/>
+<dimension x1="14.3" y1="42.3" x2="14.3" y2="56.6" x3="-4.3" y3="49.45" textsize="2" layer="47" dtype="vertical" precision="6"/>
+<dimension x1="20.9" y1="53.3" x2="22.95340625" y2="50.716684375" x3="27.806909375" y3="44.6106625" textsize="2" layer="47" dtype="radius" precision="6"/>
+<dimension x1="15.601975" y1="43.22998125" x2="12.998025" y2="41.37001875" x3="12.998021875" y3="41.37001875" textsize="2" layer="47" dtype="diameter"/>
+</package>
+<package name="HAMMOND-1593K">
+<dimension x1="57.6" y1="56.6" x2="0" y2="56.6" x3="28.8" y3="65.8" textsize="2" layer="47" precision="6"/>
+<dimension x1="57.6" y1="0" x2="57.6" y2="56.6" x3="67.8" y3="28.3" textsize="2" layer="47" precision="6"/>
+<hole x="14.8" y="42.3" drill="3.2"/>
+<circle x="14.8" y="42.3" radius="3.5" width="0" layer="42"/>
+<wire x1="17.6" y1="53.3" x2="24.2" y2="53.3" width="0" layer="20" curve="180"/>
+<circle x="20.9" y="53.3" radius="3.3" width="0" layer="42"/>
+<circle x="20.9" y="53.3" radius="3.3" width="0" layer="41"/>
+<rectangle x1="17.6" y1="53.3" x2="24.2" y2="56.6" layer="41"/>
+<rectangle x1="17.6" y1="53.3" x2="24.2" y2="56.6" layer="42"/>
+<hole x="42.8" y="42.3" drill="3.2"/>
+<circle x="42.8" y="42.3" radius="3.5" width="0" layer="41"/>
+<hole x="14.8" y="14.3" drill="3.2"/>
+<circle x="14.8" y="14.3" radius="3.5" width="0" layer="41"/>
+<wire x1="17.6" y1="53.3" x2="24.2" y2="53.3" width="0" layer="20" curve="180"/>
+<circle x="20.9" y="3.3" radius="3.3" width="0" layer="41"/>
+<circle x="20.9" y="3.3" radius="3.3" width="0" layer="42"/>
+<rectangle x1="17.6" y1="0" x2="24.2" y2="3.3" layer="42"/>
+<rectangle x1="17.6" y1="0" x2="24.2" y2="3.3" layer="41"/>
+<wire x1="17.6" y1="53.3" x2="17.6" y2="56.6" width="0" layer="20"/>
+<wire x1="24.2" y1="53.3" x2="24.2" y2="56.6" width="0" layer="20"/>
+<wire x1="17.6" y1="56.6" x2="0" y2="56.6" width="0" layer="20"/>
+<hole x="42.8" y="14.3" drill="3.2"/>
+<circle x="42.8" y="14.3" radius="3.5" width="0" layer="42"/>
+<circle x="42.8" y="42.3" radius="3.5" width="0" layer="42"/>
+<circle x="14.8" y="14.3" radius="3.5" width="0" layer="42"/>
+<circle x="14.8" y="42.3" radius="3.5" width="0" layer="41"/>
+<circle x="42.8" y="14.3" radius="3.5" width="0" layer="41"/>
+<wire x1="57.6" y1="0" x2="24.2" y2="0" width="0" layer="20"/>
+<wire x1="24.2" y1="0" x2="24.2" y2="3.3" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="17.6" y2="0" width="0" layer="20"/>
+<wire x1="17.6" y1="0" x2="17.6" y2="3.3" width="0" layer="20"/>
+<wire x1="0" y1="56.6" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="24.2" y1="56.6" x2="57.6" y2="56.6" width="0" layer="20"/>
+<wire x1="57.6" y1="0" x2="57.6" y2="56.6" width="0" layer="20"/>
+<wire x1="17.6" y1="3.3" x2="24.2" y2="3.3" width="0" layer="20" curve="-180"/>
+<dimension x1="20.9" y1="53.3" x2="0" y2="53.3" x3="10.45" y3="61.2" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="14.8" y1="14.3" x2="0" y2="14.3" x3="7.4" y3="20.1" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="14.8" y1="14.3" x2="42.8" y2="14.3" x3="28.8" y3="20.1" textsize="2" layer="47" dtype="horizontal" precision="6"/>
+<dimension x1="42.8" y1="14.3" x2="57.6" y2="14.3" x3="50.2" y3="20.1" textsize="2" layer="47" precision="6"/>
+<dimension x1="14.8" y1="14.3" x2="14.3" y2="0" x3="-4.3" y3="7.15" textsize="2" layer="47" dtype="vertical" precision="6"/>
+<dimension x1="14.8" y1="14.3" x2="14.8" y2="42.3" x3="-4.3" y3="28.3" textsize="2" layer="47" dtype="vertical" precision="6"/>
+<dimension x1="14.8" y1="42.3" x2="14.3" y2="56.6" x3="-4.3" y3="49.45" textsize="2" layer="47" dtype="vertical" precision="6"/>
+<dimension x1="20.9" y1="53.3" x2="22.95340625" y2="50.716684375" x3="27.806909375" y3="44.6106625" textsize="2" layer="47" dtype="radius" precision="6"/>
+<dimension x1="16.101975" y1="43.22998125" x2="13.498025" y2="41.37001875" x3="13.498025" y3="41.370021875" textsize="2" layer="47" dtype="diameter"/>
+</package>
+<package name="HAMMOND-1593-28">
+<wire x1="0" y1="0" x2="60" y2="0" width="0" layer="20"/>
+<wire x1="60" y1="0" x2="60" y2="22.7" width="0" layer="20"/>
+<wire x1="60" y1="22.7" x2="0" y2="22.7" width="0" layer="20"/>
+<wire x1="0" y1="22.7" x2="0" y2="0" width="0" layer="20"/>
+<dimension x1="0" y1="0" x2="60" y2="0" x3="30" y3="-8.1" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="0" y1="22.7" x2="0" y2="0" x3="-5" y3="11.35" textsize="2" layer="47" dtype="horizontal"/>
+<dimension x1="0" y1="0.9" x2="0" y2="21.8" x3="-1.1" y3="11.35" textsize="2" layer="47" dtype="vertical"/>
+<rectangle x1="0" y1="0" x2="60" y2="0.9" layer="39"/>
+<rectangle x1="0" y1="0" x2="1.4" y2="22.7" layer="39"/>
+<rectangle x1="58.6" y1="0" x2="60" y2="22.7" layer="39"/>
+<rectangle x1="0" y1="21.8" x2="60" y2="22.7" layer="39"/>
+<dimension x1="1.4" y1="0" x2="58.6" y2="0" x3="30" y3="-4" textsize="2" layer="47"/>
+<rectangle x1="0" y1="0" x2="1.4" y2="22.7" layer="40"/>
+<rectangle x1="0" y1="21.8" x2="60" y2="22.7" layer="40"/>
+<rectangle x1="0" y1="0" x2="60" y2="0.9" layer="40"/>
+<rectangle x1="58.6" y1="0" x2="60" y2="22.7" layer="40"/>
 </package>
 </packages>
 <symbols>
@@ -1477,11 +1606,26 @@ high speed (Philips)</description>
 <gate name="G$1" symbol="UNIVERSALBOARD-AKI" x="0" y="0" swaplevel="1"/>
 </gates>
 <devices>
-<device name="-1551R" package="HAMMOND1551R">
+<device name="-1551R" package="HAMMOND-1551R">
 <technologies>
 <technology name="BK">
 <attribute name="DIGIKEY" value="HM913-ND" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="-1593L" package="HAMMOND-1593L">
+<technologies>
+<technology name="BK"/>
+</technologies>
+</device>
+<device name="-1593K" package="HAMMOND-1593K">
+<technologies>
+<technology name="BK"/>
+</technologies>
+</device>
+<device name="-66X28" package="HAMMOND-1593-28">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

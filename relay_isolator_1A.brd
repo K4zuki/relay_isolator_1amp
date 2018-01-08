@@ -305,7 +305,7 @@
 <text x="1.8" y="2.1" size="1.016" layer="51" ratio="20">NC</text>
 <text x="1.8" y="-3.1" size="1.016" layer="51" ratio="20">NC</text>
 </package>
-<package name="HAMMOND1551R">
+<package name="HAMMOND-1551R">
 <wire x1="44" y1="0" x2="6.25" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="6.25" x2="0" y2="44" width="0" layer="20"/>
 <wire x1="3.25" y1="6.25" x2="6.25" y2="3.25" width="0" layer="20" curve="-90"/>
@@ -824,7 +824,7 @@ design rules under a new name.</description>
 <element name="GIT1" library="git-revision" package="GIT-REVISION_1.7" value="fc87989" x="13.3" y="1.7">
 <attribute name="NOT_COMPONENT" value="YES" x="13.3" y="1.7" size="2" layer="27" ratio="20" display="off"/>
 </element>
-<element name="PCB1" library="mylib" package="HAMMOND1551R" value="" x="0" y="0">
+<element name="PCB1" library="mylib" package="HAMMOND-1551R" value="" x="0" y="0">
 <attribute name="DIGIKEY" value="HM913-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
 <element name="REF1" library="mylib" package="POMONA72918" value="POMONA72918" x="-0.2" y="31.55" rot="R90">
